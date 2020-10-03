@@ -19,14 +19,13 @@ DEFINES += QT_DEPRECATED_WARNINGS
 SOURCES += \
     wrapper_static.cpp \
     gift.cpp \
-    retailer.cpp \
     person.cpp
 
 HEADERS += \
     wrapper_static_global.h \
     wrapper_static.h \
     gift.h \
-    retailer.h \
+    retailer_interface.h \
     person.h
 
 # Default rules for deployment.

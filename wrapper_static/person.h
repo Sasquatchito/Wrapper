@@ -14,7 +14,8 @@ public:
 
     //getters and setters
     void set_name(string name);
-    void add_gift(Gift gift_name);
+    void add_gift(Gift* gift_name, float rank);
+    void change_rank(string gift_name, float rank);
     void delete_gift(string name);
 
 
@@ -22,7 +23,7 @@ private:
     string name;
 
     struct gift_preference{
-        Gift gift;
+        Gift* gift;
         float rank;
     };
     

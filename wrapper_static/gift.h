@@ -6,7 +6,7 @@
 #include <map>
 #include <QtCore>
 
-#include "retailer.h"
+#include "retailer_interface.h"
 
 using namespace std;
 
@@ -34,7 +34,7 @@ public:
     string get_gift_name();
 
     //retail modifiers
-    void add_retailer(string retail_name, retailer* retiail);
+    void add_retailer(string retail_name, retailer_interface* retiail);
     void remove_retailer(string retail_name);
 
     //url modifiers
@@ -61,7 +61,7 @@ private:
     bool sold_out = false;
     vector<string> retailers;
     struct retail_gift_data{
-        retailer* retail;
+        retailer_interface* retail;
         string gift_url;
         string review_url;
         string img_url;
