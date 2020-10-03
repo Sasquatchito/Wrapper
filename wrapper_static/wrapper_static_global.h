@@ -1,0 +1,12 @@
+#ifndef WRAPPER_STATIC_GLOBAL_H
+#define WRAPPER_STATIC_GLOBAL_H
+
+#include <QtCore/qglobal.h>
+
+#if defined(WRAPPER_STATIC_LIBRARY)
+#  define WRAPPER_STATIC_EXPORT Q_DECL_EXPORT
+#else
+#  define WRAPPER_STATIC_EXPORT Q_DECL_IMPORT
+#endif
+
+#endif // WRAPPER_STATIC_GLOBAL_H
