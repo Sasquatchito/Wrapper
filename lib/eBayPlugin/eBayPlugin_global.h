@@ -1,0 +1,12 @@
+#ifndef EBAYPLUGIN_GLOBAL_H
+#define EBAYPLUGIN_GLOBAL_H
+
+#include <QtCore/qglobal.h>
+
+#if defined(EBAYPLUGIN_LIBRARY)
+#  define EBAYPLUGIN_EXPORT Q_DECL_EXPORT
+#else
+#  define EBAYPLUGIN_EXPORT Q_DECL_IMPORT
+#endif
+
+#endif // EBAYPLUGIN_GLOBAL_H

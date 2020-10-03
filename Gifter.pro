@@ -2,4 +2,5 @@ TEMPLATE = subdirs
 
 SUBDIRS += \
     ./lib/AmazonPlugin \
-    ./wrapper \
+    ./wrapper  \
+    ./lib/eBayPlugin
