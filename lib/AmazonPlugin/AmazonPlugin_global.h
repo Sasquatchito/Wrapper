@@ -1,0 +1,12 @@
+#ifndef AMAZONPLUGIN_GLOBAL_H
+#define AMAZONPLUGIN_GLOBAL_H
+
+#include <QtCore/qglobal.h>
+
+#if defined(AMAZONPLUGIN_LIBRARY)
+#  define AMAZONPLUGIN_EXPORT Q_DECL_EXPORT
+#else
+#  define AMAZONPLUGIN_EXPORT Q_DECL_IMPORT
+#endif
+
+#endif // AMAZONPLUGIN_GLOBAL_H
