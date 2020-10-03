@@ -1,2 +1,5 @@
 .\bin
 .\Gifter.pro.user
+.\wrapper\wrapper.pro.user
+.\lib\AmazonPlugin\AmazonPlugin.pro.user
+.\lib\eBayPlugin\eBayPlugin.pro.user
